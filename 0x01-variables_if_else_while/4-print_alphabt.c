@@ -11,9 +11,9 @@ char c;
 
 for (c = 'a'; c <= 'z'; c++)
 {
-if (c != q)
+if (c != 'q')
 {
-if (c != e)
+if (c != 'e')
 {
 putchar (c);
 }
