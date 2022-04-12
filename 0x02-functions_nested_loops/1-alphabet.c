@@ -10,17 +10,14 @@
 * Return: Always
 */
 
-int main(void)
-{
+int main(void){
 print_alphabet();
 return (0);
 }
 
-void print_alphabet(void)
-{
+void print_alphabet(void){
 char a;
-for (a = 'a'; a <= 'z'; a++)
-{
+for (a = 'a'; a <= 'z'; a++){
 int m = _putchar(a);
 }
 return;
