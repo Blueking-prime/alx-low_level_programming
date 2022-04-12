@@ -4,6 +4,10 @@
 * main - Entry point
 *
 * Return: Always (Success/correct)
+*
+* print_alphabet - Prints out the alphabet
+*
+* Return: Always
 */
 
 int main(void)
