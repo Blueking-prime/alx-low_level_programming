@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * jack_bauer - Entry point
-* @n: character who's case is to be tested
+*
 * Return: (Always/Success)
 */
 void jack_bauer(void)
@@ -16,6 +16,7 @@ for (a = 0; a <= 1; a++)
 if (a == 2)
 {
 e = 3;
+b = 0;
 }
 for (b = 0; b <= e; b++)
 {
