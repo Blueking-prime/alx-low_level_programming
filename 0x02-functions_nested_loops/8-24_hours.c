@@ -13,9 +13,12 @@ int a;
 int b;
 int c;
 int d;
-for (a = 0; a <= 2; a++)
+int e;
+int f;
+int g;
+for (a = 0; a <= 1; a++)
 {
-for (b = 0; b <= 3; b++)
+for (b = 0; b <= 9; b++)
 {
 for (c = 0; c <= 5; c++)
 {
@@ -28,6 +31,21 @@ _putchar (c + '0');
 _putchar (d + '0');
 _putchar ('\n');
 }
+}
+}
+}
+for (e = 0; e <= 3; e++)
+{
+for (f = 0; f <= 5; f++)
+{
+for (g = 0; g <= 9; g++)
+{
+_putchar ('2');
+_putchar (e + '0');
+_putchar (':');
+_putchar (f + '0');
+_putchar (g + '0');
+_putchar ('\n');
 }
 }
 }
