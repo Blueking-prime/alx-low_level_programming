@@ -1,21 +1,15 @@
 #include "main.h"
-
 /**
 * jack_bauer - Entry point
 * @n: character who's case is to be tested
 * Return: (Always/Success)
 */
-
-
 void jack_bauer(void)
 {
 int a;
 int b;
 int c;
 int d;
-int e;
-int f;
-int g;
 for (a = 0; a <= 1; a++)
 {
 for (b = 0; b <= 9; b++)
@@ -34,17 +28,17 @@ _putchar ('\n');
 }
 }
 }
-for (e = 0; e <= 3; e++)
+for (a = 0; a <= 3; a++)
 {
-for (f = 0; f <= 5; f++)
+for (b = 0; b <= 5; b++)
 {
-for (g = 0; g <= 9; g++)
+for (c = 0; c <= 9; c++)
 {
 _putchar ('2');
-_putchar (e + '0');
+_putchar (a + '0');
 _putchar (':');
-_putchar (f + '0');
-_putchar (g + '0');
+_putchar (b + '0');
+_putchar (c + '0');
 _putchar ('\n');
 }
 }
