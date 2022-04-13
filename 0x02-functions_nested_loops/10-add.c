@@ -3,6 +3,10 @@
 /**
 * add - Entry point
 *
+* @a - First number to be added
+*
+* @b - Second number to be added
+*
 * Return: (Always/Success)
 */
 
