@@ -10,8 +10,8 @@
 */
 
 void print_to_98(int n)
-int a;
 {
+int a;
 if (n < 98)
 {
 for (a = n; a <= 98; a++)
@@ -28,6 +28,6 @@ printf ("%d, ", a);
 }
 else
 {
-printf ("98")
+printf ("98");
 }
 }
