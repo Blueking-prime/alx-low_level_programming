@@ -25,11 +25,11 @@ else
 {
 _putchar (' ');
 }
-_putchar(res + '0')
+_putchar(res + '0');
 b++;
 if (b = 9)
 {
-_putchar ('\n')
+_putchar ('\n');
 }
 }
 a++;
