@@ -10,11 +10,16 @@ int a;
 int b;
 int c;
 int d;
+int e = 9;
 for (a = 0; a <= 1; a++)
 {
+if (a = 2)
+{
+e = 3
+}
 for (b = 0; b <= 9; b++)
 {
-for (c = 0; c <= 5; c++)
+for (c = 0; c <= e; c++)
 {
 for (d = 0; d <= 9; d++)
 {
@@ -25,21 +30,6 @@ _putchar (c + '0');
 _putchar (d + '0');
 _putchar ('\n');
 }
-}
-}
-}
-for (a = 0; a <= 3; a++)
-{
-for (b = 0; b <= 5; b++)
-{
-for (c = 0; c <= 9; c++)
-{
-_putchar ('2');
-_putchar (a + '0');
-_putchar (':');
-_putchar (b + '0');
-_putchar (c + '0');
-_putchar ('\n');
 }
 }
 }
