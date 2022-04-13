@@ -11,7 +11,7 @@ int _abs(int n)
 int res;
 if (n < 0)
 {
-res = n - (2*n);
+res = n - (2 * n);
 return (res);
 }
 else
