@@ -12,7 +12,6 @@
 
 int main(void){
 print_alphabet();
-_putchar('\n');
 return (0);
 }
 
@@ -21,5 +20,6 @@ char a;
 for (a = 'a'; a <= 'z'; a++){
 _putchar(a);
 }
+_putchar('\n');
 return;
 }
