@@ -27,7 +27,7 @@ _putchar (' ');
 }
 _putchar(res + '0');
 b++;
-if (b == 9)
+if (b > 9)
 {
 _putchar ('\n');
 }
