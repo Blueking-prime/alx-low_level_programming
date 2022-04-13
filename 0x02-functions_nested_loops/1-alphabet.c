@@ -1,19 +1,10 @@
 #include "main.h"
 
 /**
-* main - Entry point
+* print_alphabet - Entry point
 *
-* Return: Always (Success/correct)
-*
-* print_alphabet - Prints out the alphabet
-*
-* Return: Always
+* Return: 0
 */
-
-int main(void){
-print_alphabet();
-return (0);
-}
 
 void print_alphabet(void){
 char a;
