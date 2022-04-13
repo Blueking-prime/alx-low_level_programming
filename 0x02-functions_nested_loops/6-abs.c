@@ -6,7 +6,7 @@
 * Return: (Always/Success)
 */
 
-int _abs(int)
+int _abs(int n)
 {
 int res;
 if (n < 0)
