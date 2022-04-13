@@ -13,9 +13,9 @@ int d;
 int e = 9;
 for (a = 0; a <= 1; a++)
 {
-if (a = 2)
+if (a == 2)
 {
-e = 3
+e = 3;
 }
 for (b = 0; b <= 9; b++)
 {
