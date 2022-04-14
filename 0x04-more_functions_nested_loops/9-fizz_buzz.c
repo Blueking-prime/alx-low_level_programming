@@ -1,21 +1,15 @@
 #include <stdio.h>
+
 /**
 * main - Entry point
 *
-* fizz_buzz - The Fizz-Buzz test
-*
-* Return: (Always/Success)
+* Return: 0
 */
-void fizz_buzz(void);
+
 int main(void)
 {
-fizz_buzz();
-return (0);
-}
-void fizz_buzz(void)
-{
 int i;
-for (i = 1; i <= 100; i++)
+for (i = 1; i < 100; i++)
 {
 if (((i % 3) == 0) && ((i % 5) == 0))
 {
@@ -37,4 +31,6 @@ printf("%d ", i);
 }
 }
 }
+printf("100");
+return (0);
 }
