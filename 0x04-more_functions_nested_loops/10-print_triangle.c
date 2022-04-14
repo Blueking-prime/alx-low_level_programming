@@ -3,6 +3,8 @@
 /**
 * print_triangle - Entry point
 *
+* @size: height and base length of triangle
+*
 * Return: (Always/Success)
 */
 

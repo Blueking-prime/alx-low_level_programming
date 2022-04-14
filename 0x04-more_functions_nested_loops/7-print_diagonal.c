@@ -3,6 +3,8 @@
 /**
 * print_diagonal - Entry point
 *
+* @n: number of times to run
+*
 * Return: (Always/Success)
 */
 void print_diagonal(int n)

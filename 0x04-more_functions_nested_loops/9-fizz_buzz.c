@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main - Entry point
-* 
+*
 * fizz_buzz - The Fizz-Buzz test
 *
 * Return: (Always/Success)

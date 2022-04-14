@@ -3,6 +3,8 @@
 /**
 * print_square - Entry point
 *
+* @size: length of square
+*
 * Return: (Always/Success)
 */
 void print_square(int size)
