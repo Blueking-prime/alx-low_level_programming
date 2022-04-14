@@ -30,7 +30,7 @@ printf("%d ", i);
 }
 }
 
-printf("100");
+printf("100\n");
 
 return (0);
 }
