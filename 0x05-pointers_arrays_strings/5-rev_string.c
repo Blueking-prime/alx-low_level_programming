@@ -16,7 +16,7 @@ int i;
 char *p;
 int j = 0;
 p = s;
-char t[];
+char t;
 
 while (*p != '\0')
 {
