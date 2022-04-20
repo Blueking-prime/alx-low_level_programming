@@ -14,8 +14,8 @@ int k;
 int i;
 char *p;
 int j = 0;
-p = str;
 int l = j - 1;
+p = str;
 while (*p != '\0')
 {
 j++;
