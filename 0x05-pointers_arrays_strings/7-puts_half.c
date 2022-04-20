@@ -28,10 +28,10 @@ k = j / 2;
 }
 else
 {
-k = (j - 1) / 2;
+k = (j + 1) / 2;
 }
 
-for (i = k - 1; str[i] != '\0'; i++)
+for (i = k; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
 }
