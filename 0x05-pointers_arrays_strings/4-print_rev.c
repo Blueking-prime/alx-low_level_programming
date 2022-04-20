@@ -10,10 +10,17 @@
 
 void print_rev(char *s)
 {
-int j;
 int i;
 
-j = _strlen(s);
+char *p;
+int j = 0;
+p = s;
+
+while (*p != '\0')
+{
+j++;
+p++;
+}
 
 for (i = j; i >= 0; i--)
 {
