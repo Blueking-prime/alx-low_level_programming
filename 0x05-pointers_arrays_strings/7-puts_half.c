@@ -14,13 +14,14 @@ int k;
 int i;
 char *p;
 int j = 0;
-int l = j - 1;
+int l;
 p = str;
 while (*p != '\0')
 {
 j++;
 p++;
 }
+l = j - 1;
 if (l % 2 == 0)
 {
 k = l / 2;
