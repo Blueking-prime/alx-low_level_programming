@@ -14,24 +14,24 @@ int k;
 int i;
 char *p;
 int j = 0;
-int l;
 p = str;
+
 while (*p != '\0')
 {
 j++;
 p++;
 }
-l = j - 1;
-if (l % 2 == 0)
+
+if (j % 2 == 0)
 {
-k = l / 2;
+k = j / 2;
 }
 else
 {
-k = (l - 1) / 2;
+k = (j - 1) / 2;
 }
 
-for (i = k; str[i] != '\0'; i++)
+for (i = k - 1; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
 }
