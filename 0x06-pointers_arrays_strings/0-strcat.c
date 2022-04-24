@@ -13,6 +13,7 @@
 char *_strcat(char *dest, char *src)
 {
 char *p;
+int i;
 int j = 0;
 p = dest;
 /*calculating source string length*/
@@ -24,11 +25,9 @@ p++;
 j++;
 
 /*Appending Source string to destination*/
-int i = 0;
-while (src[i] != '\0')
+for (i = 0; src[i] != '\0'; i++)
 {
 dest[j + i] = src[i];
-i++;
 }
 dest[j + i] = '\0';
 

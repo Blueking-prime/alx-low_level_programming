@@ -15,6 +15,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 char *p;
+int i;
 int j = 0;
 p = dest;
 /*calculating source string length*/
@@ -26,7 +27,6 @@ p++;
 j++;
 
 /*Appending source string to destination*/
-int i;
 for (i = 0; (src[i] != '\0') && (i < n); i++)
 {
 dest[j + i] = src[i];
