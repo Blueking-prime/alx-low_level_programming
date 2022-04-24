@@ -13,6 +13,8 @@
 int _strcmp(char *s1, char *s2)
 {
 char *p;
+int i;
+int res;
 int j = 0;
 p = s2;
 /*calculating source string length*/
@@ -22,7 +24,6 @@ j++;
 p++;
 }
 
-int i, res;
 res = 0;
 for (i = 0; i < j; i++)
 {
