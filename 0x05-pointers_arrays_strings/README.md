@@ -1,1 +1,1 @@
-More uses of nested loops in C
+Strings, arrays and pointers
