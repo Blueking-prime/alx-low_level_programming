@@ -27,10 +27,11 @@ j++;
 int i = 0;
 while (src[i] != '\0')
 {
-dest[j + i] = src[i];
+dest[j] = src[i];
 i++;
+j++;
 }
-dest[j + i] = '\0';
+dest[j] = '\0';
 
 return (dest);
 }
