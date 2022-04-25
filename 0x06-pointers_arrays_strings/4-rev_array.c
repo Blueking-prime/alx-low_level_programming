@@ -5,6 +5,8 @@
 *
 * @a: array to be reversed
 *
+* @n: size of array
+*
 * Return: (Always/Success)
 */
 
