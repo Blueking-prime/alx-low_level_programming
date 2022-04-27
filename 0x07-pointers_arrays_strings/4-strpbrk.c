@@ -24,8 +24,7 @@ if (s[i] == accept[k])
 {
 j++;
 p = s[i];
-return (p);
-}
+break;
 }
 }
 

@@ -15,7 +15,6 @@ char *_strchr(char *s, char c)
 char *p;
 int i;
 int j = 0;
-char *n = '\0';
 
 for (i = 0; s[i] != '\0'; i++)
 {
@@ -23,7 +22,7 @@ if (s[i] == c)
 {
 j++;
 p = s[i];
-return (p);
+break;
 }
 }
 
@@ -33,6 +32,6 @@ return (p);
 }
 else
 {
-return (n);
+return (NULL);
 }
 }
