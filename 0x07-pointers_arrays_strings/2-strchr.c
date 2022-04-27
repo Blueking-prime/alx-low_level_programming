@@ -26,7 +26,7 @@ break;
 
 if (j != 0)
 {
-return (s + j);
+return (s + i);
 }
 else
 {
