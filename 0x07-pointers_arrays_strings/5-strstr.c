@@ -6,9 +6,7 @@
 * @s: String to be checked
 *
 * Return: (Always/Success)
-*/
-
-/**
+*
 * *_strstr - Calculates string stuff
 *
 * @haystack: String to be checked
