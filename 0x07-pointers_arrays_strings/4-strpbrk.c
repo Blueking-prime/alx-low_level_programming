@@ -34,6 +34,6 @@ return (p);
 }
 else
 {
-return (NULL);
+return ('\0');
 }
 }
