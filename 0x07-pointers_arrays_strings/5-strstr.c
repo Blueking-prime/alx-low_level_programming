@@ -35,7 +35,7 @@ char *p;
 int i, k, x, y;
 int j = 0;
 x = _strlen(needle);
-for (i = 0; haystack[i] != '\0'; i++)
+for (i = 0; haystack[i] >= '\0'; i++)
 {
 y = i;
 if (haystack[i] == needle[0])
@@ -52,14 +52,14 @@ i++;
 if (j == x)
 {
 p = haystack[i];
-return (p);
+return (haystack + i);
 }
 j = 0;
 i = y;
 }
 if (j != 0)
 {
-return (p);
+return (haystack + i);
 }
 else
 {
