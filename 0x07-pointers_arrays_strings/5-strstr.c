@@ -31,7 +31,6 @@ return (j);
 
 char *_strstr(char *haystack, char *needle)
 {
-char *p;
 int i, k, x, y;
 int j = 0;
 x = _strlen(needle);
@@ -51,18 +50,11 @@ i++;
 }
 if (j == x)
 {
-p = &haystack[i];
-return (p);
+return (haystack + i);
 }
 j = 0;
 i = y;
 }
-if (j != 0)
-{
-return (p);
-}
-else
-{
+
 return ('\0');
-}
 }

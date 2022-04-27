@@ -22,7 +22,7 @@ for (k = 0; accept[k] != '\0'; k++)
 if (s[i] == accept[k])
 {
 p = &s[i];
-return(p);
+return (p);
 }
 }
 }
