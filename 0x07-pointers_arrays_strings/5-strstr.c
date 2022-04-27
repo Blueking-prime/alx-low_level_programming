@@ -1,15 +1,17 @@
 #include "main.h"
 
 /**
+* _strlen - Calculates length of string
+*
+* @s: String to be checked
+*/
+
+/**
 * *_strstr - Entry point
 *
 * @haystack: String to be checked
 *
 * @needle: String to check for
-*
-* _strlen - Calculates length of string
-*
-* @s: String to be checked
 *
 * Return: (Always/Success)
 */
