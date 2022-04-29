@@ -40,6 +40,6 @@ return (0);
 }
 else
 {
-return(stress_it(n, ++test));
+return (stress_it(n, ++test));
 }
 }
