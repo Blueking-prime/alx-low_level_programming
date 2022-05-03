@@ -10,7 +10,7 @@
 * Return: (Always/Success)
 */
 
-int main(int argc, char **argv)
+int main(int argc, int **argv)
 {
 int a, b, res;
 if (argc == 3)
