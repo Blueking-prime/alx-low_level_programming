@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
 * main - Entry point
@@ -10,13 +11,13 @@
 * Return: (Always/Success)
 */
 
-int main(int argc, int *argv[0])
+int main(int argc, char **argv)
 {
 int a, b, res;
 if (argc == 3)
 {
-a = (int) argv[1];
-b = (int) argv[2];
+a = atoi(argv[1]);
+b = atoi(argv[2]);
 
 res = a * b;
 
