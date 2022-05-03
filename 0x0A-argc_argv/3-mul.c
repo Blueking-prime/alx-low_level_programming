@@ -10,13 +10,13 @@
 * Return: (Always/Success)
 */
 
-int main(int argc, int **argv)
+int main(int argc, char **argv)
 {
 int a, b, res;
 if (argc == 3)
 {
-a = argv[1];
-b = argv[2];
+a = (int) argv[1];
+b = (int) argv[2];
 
 res = a * b;
 

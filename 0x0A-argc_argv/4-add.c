@@ -10,7 +10,7 @@
 * Return: (Always/Success)
 */
 
-int main(int argc, int **argv)
+int main(int argc, char **argv)
 {
 int a, i;
 int res = 0;
@@ -21,7 +21,7 @@ return (0);
 }
 for (i = 0; i < argc; i++)
 {
-a = argv[i];
+a = (int) argv[i];
 if (a / 1 != a)
 {
 printf("Error\n");
