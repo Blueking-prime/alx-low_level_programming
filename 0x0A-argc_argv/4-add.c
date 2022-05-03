@@ -23,7 +23,7 @@ return (0);
 for (i = 0; i < argc; i++)
 {
 a = atoi(argv[i]);
-if (a / 1 != a)
+if (a == 0)
 {
 printf("Error\n");
 return (1);
