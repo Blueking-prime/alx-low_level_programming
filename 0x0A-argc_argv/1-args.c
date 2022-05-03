@@ -12,7 +12,7 @@
 
 int main(int argc, char **argv)
 {
-printf("%d", argc);
+printf("%d\n", argc);
 if (argv[0] == argv[1])
 {
 return (0);
