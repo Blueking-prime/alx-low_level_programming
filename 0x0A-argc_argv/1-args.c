@@ -13,5 +13,9 @@
 int main(int argc, char **argv)
 {
 printf("%d", argc);
+if (argv[1] == argv[1])
+{
+return (0);
+}
 return (0);
 }
