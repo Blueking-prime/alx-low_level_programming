@@ -6,7 +6,7 @@
 *
 * @width: length of array
 *
-* @height: character to be cloned
+* @height: height of array
 *
 * Return: (Always/Success)
 */
@@ -28,7 +28,7 @@ if (b == NULL)
 return (NULL);
 }
 
-a = malloc(height * sizeof(*b));
+a = malloc(height * sizeof(b));
 
 if (a == NULL)
 {
