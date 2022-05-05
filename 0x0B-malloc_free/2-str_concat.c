@@ -42,11 +42,6 @@ int i, size1, size2;
 size1 = _strlen(s1);
 size2 = _strlen(s2);
 
-if (size1 == 0 || size2 == 0)
-{
-return (NULL);
-}
-
 s = malloc((size1 + size2 + 1) * sizeof(char));
 if (s == NULL || s == 0)
 {
