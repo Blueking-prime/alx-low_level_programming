@@ -78,6 +78,10 @@ str = _strcat(s1, s2);
 size = _strlen(str);
 
 s = malloc((size + 1) * sizeof(char));
+if (s == NULL)
+{
+return (NULL);
+}
 
 if (size == 0)
 {
