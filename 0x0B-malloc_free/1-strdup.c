@@ -45,7 +45,7 @@ if (size == 0)
 {
 return (NULL);
 }
-if (str == NULL || str == '\0')
+if (str == NULL || *str == '\0')
 {
 return (NULL);
 }
