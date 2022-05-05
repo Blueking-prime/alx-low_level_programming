@@ -30,8 +30,8 @@ return (NULL);
 
 for (i = 0; i < height; i++)
 {
-b = a[i];
 b = malloc(width * sizeof(**a));
+b = a[i];
 
 if (b == NULL)
 {
