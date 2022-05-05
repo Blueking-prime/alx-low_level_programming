@@ -43,14 +43,14 @@ return (NULL);
 }
 
 size = _strlen(str);
+if (size == 0)
+{
+return (NULL);
+}
 
 s = malloc((size + 1) * sizeof(char));
 
 if (s == NULL)
-{
-return (NULL);
-}
-if (size == 0)
 {
 return (NULL);
 }
