@@ -21,7 +21,7 @@ if (width < 1 || height < 1)
 return (NULL);
 }
 
-a = malloc(height * sizeof(b));
+a = malloc(height * sizeof(*a));
 
 if (a == NULL)
 {
