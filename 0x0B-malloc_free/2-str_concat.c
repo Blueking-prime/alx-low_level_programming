@@ -25,40 +25,6 @@ return (j);
 }
 
 /**
-* *_strcat - concatenates strings
-*
-* @dest: destination string
-*
-* @src: source string
-*
-* Return: (Always/Success)
-*/
-
-char *_strcat(char *dest, char *src)
-{
-char *p;
-int i;
-int j = 0;
-p = dest;
-/*calculating source string length*/
-while (*p != '\0')
-{
-j++;
-p++;
-}
-j++;
-
-/*Appending Source string to destination*/
-for (i = 0; src[i] != '\0'; i++)
-{
-dest[j + i] = src[i];
-}
-dest[j + i] = '\0';
-
-return (dest);
-}
-
-/**
 * *str_concat - Entry point
 *
 * @s1: length of array
@@ -70,30 +36,40 @@ return (dest);
 
 char *str_concat(char *s1, char *s2)
 {
-char *s, *str;
-int i, size;
+char *s;
+int i, size1, size2;
 
-str = _strcat(s1, s2);
+size1 = _strlen(s1);
+size2 = _strlen(s2);
 
-size = _strlen(str);
-
-s = malloc((size + 1) * sizeof(char));
-if (s == NULL)
+if (size1 == 0 || size2 == 0)
 {
 return (NULL);
 }
 
-if (size == 0)
+s = malloc((size1 + size2 + 1) * sizeof(char));
+if (s == NULL || s == 0)
 {
 return (NULL);
 }
-if (str == NULL || *str == '\0')
+if (s1 ==  NULL)
 {
-return (NULL);
+s1 = '\0';
 }
-for (i = 0; i < size; i++)
+if (s2 ==  NULL)
 {
-s[i] = str[i];
+s2 = '\0';
+}
+for (i = 0; i <= size1 + size2; i++)
+{
+if (i < size1)
+{
+s[i] = s1[i];
+}
+else
+{
+s[i] = s2[i - size1];
+}
 }
 s[i] = '\0';
 return (s);
