@@ -43,25 +43,23 @@ unsigned int i, size1, size2;
 
 size1 = _strlen(s1);
 size2 = _strlen(s2);
-
 if (n >= size2)
 {
 n = size2;
 }
 
 s = malloc((size1 + n + 1) * sizeof(char));
-if (s == NULL || s == 0)
+if (s == NULL)
 {
-free(s);
 return (NULL);
 }
 if (s1 ==  NULL)
 {
-s1 = '\0';
+s1 = "";
 }
 if (s2 ==  NULL)
 {
-s2 = '\0';
+s2 = "";
 }
 for (i = 0; i <= size1 + n; i++)
 {
