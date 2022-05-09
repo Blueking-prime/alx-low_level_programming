@@ -39,7 +39,7 @@ return (j);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *s;
-unsigned int i, size1, size2;
+unsigned int i, j, size1, size2;
 
 size1 = _strlen(s1);
 size2 = _strlen(s2);
@@ -63,16 +63,13 @@ if (s == NULL)
 {
 return (NULL);
 }
-for (i = 0; i <= size1 + n; i++)
-{
-if (i < size1)
+for (i = 0; s1[i] != '\0'; i++)
 {
 s[i] = s1[i];
 }
-else
+for (j = 0; s2[j] != '\0' && j < n; i++, j++)
 {
-s[i] = s2[i - size1];
-}
+s[i] = s2[j];
 }
 s[i] = '\0';
 return (s);
