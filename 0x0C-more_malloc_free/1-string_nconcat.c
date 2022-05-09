@@ -39,7 +39,7 @@ return (j);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *s;
-int i, size1, size2;
+unsigned int i, size1, size2;
 
 size1 = _strlen(s1);
 size2 = _strlen(s2);

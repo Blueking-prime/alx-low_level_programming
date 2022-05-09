@@ -23,7 +23,7 @@ return (NULL);
 
 range = max - min + 1;
 
-a = malloc(range * sizeof(int));
+a = malloc(range *sizeof(int));
 if (a == NULL)
 {
 return (NULL);
