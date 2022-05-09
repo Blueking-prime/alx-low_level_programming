@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* *string_nconcat - Entry point
+* *_calloc - Entry point
 *
 * @nmemb: number of elements
 *
@@ -25,7 +25,7 @@ a = malloc(nmemb * size);
 if (a == NULL)
 {
 free(a);
-return(NULL);
+return (NULL);
 }
 
 for (i = 0; i < (nmemb * size); i++)
