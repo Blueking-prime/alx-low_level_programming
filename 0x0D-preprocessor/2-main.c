@@ -8,6 +8,6 @@
 
 int main(void)
 {
-printf("%s", __BASE_FILE__);
+printf(__FILE__);
 return (0);
 }
