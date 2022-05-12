@@ -34,7 +34,7 @@ d->owner = owner;
 if (d->owner == NULL)
 {
 free(d);
-return(NULL);
+return (NULL);
 }
 return (d);
 }
