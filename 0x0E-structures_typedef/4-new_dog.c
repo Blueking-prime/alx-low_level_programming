@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <stdlib.h>
 
 /**
 * *new_dog - Entry point
@@ -17,7 +18,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *d;
 
-if (name == NULL || age <= 0 || owner == NULL)
+if (name == NULL || owner == NULL)
 {
 return (NULL);
 }
