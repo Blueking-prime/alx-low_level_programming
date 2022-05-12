@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-* *new_dog - Entry point
+* free_dog - Entry point
 *
 * @d: name of dog
 *
@@ -11,5 +11,7 @@
 
 void free_dog(dog_t *d)
 {
+free(d->name);
+free(d->owner);
 free(d);
 }
