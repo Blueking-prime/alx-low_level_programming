@@ -1,5 +1,7 @@
 #include "function_pointers.h"
+#include "3-calc.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
 * main - Entry point
@@ -13,9 +15,10 @@
 
 int main(int argc, char *argv[])
 {
-int c;
-int a = atoi(argv[1]);
-int b = atoi(argv[3]);
+int a, b, c;
+
+a = atoi(argv[1]);
+b = atoi(argv[3]);
 
 if (argc != 4)
 {
@@ -40,3 +43,4 @@ exit(99);
 printf("%d\n", c);
 
 return (0);
+}
