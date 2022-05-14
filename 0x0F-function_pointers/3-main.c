@@ -2,6 +2,7 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
 * main - Entry point
@@ -26,7 +27,7 @@ printf("Error\n");
 exit(98);
 }
 
-if ((*argv[2] == "/" || *argv[2] == "%") && *argv[3] == "0")
+if ((argv[2] == "/" || argv[2] == "%") && argv[3] == "0")
 {
 printf("Error\n");
 exit(100);
