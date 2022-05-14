@@ -2,7 +2,7 @@
 #include "3-calc.h"
 
 /**
-* (*get_op_func) - Entry point
+* get_op_func - Entry point
 *
 * @s: operation to use
 *
@@ -24,10 +24,11 @@ op_t ops[] = {
 
 while (i < 5)
 {
-if (s == ops->op)
+if (s == ops[i].op)
 {
-return (ops->f);
+return (ops[i].f);
 }
+i++;
 }
-return (ops->f);
+return (ops[i].f);
 }
