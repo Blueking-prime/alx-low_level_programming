@@ -32,7 +32,7 @@ printf("Error\n");
 exit(100);
 }
 
-if (get_op_func(argv[2]) == NULL)
+if (get_op_func(argv[2]) == NULL || argv[1] != '\0')
 {
 printf("Error\n");
 exit(99);
