@@ -69,7 +69,7 @@ int j, i = 0;
 char *seperator = "";
 
 char *types = "cifs";
-void (*funcs[])(va_list) = {print_c, print_i, printf, print_s};
+void (*funcs[])(va_list) = {print_c, print_i, print_f, print_s};
 
 va_start(args, format);
 

@@ -16,11 +16,6 @@ va_list args;
 unsigned int i;
 char *s;
 
-if (n == 0)
-{
-return;
-}
-
 va_start(args, n);
 
 if (separator != NULL)
