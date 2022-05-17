@@ -1,3 +1,5 @@
+/* For some reason this crashes the compiler*/
+
 #include "variadic_functions.h"
 
 /**
@@ -68,25 +70,20 @@ va_list args;
 int j, i = 0;
 char *seperator = "";
 
-type format_type[] = {
-{"c", print_c},
-{"i", print_i},
-{"f", print_f},
-{"s", print_s},
-{NULL, NULL}
-};
+char *types = "cifs";
+void (*funcs[])(va_list) = {print_c, print_i, print_f, print_s};
 
 va_start(args, format);
 
 while (format && format[i])
 {
 j = 0;
-while (j < 4)
+while (j != '\0')
 {
-if (format[i] == *format_type[j].type_name)
+if (format[i] == types[j])
 {
 printf("%s", seperator);
-format_type[j].print_func(args);
+funcs[j](args);
 seperator = ", ";
 break;
 }
