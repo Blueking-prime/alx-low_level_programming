@@ -1,0 +1,1 @@
+Hmm functions with unspecified arguments. What could go wrong?
