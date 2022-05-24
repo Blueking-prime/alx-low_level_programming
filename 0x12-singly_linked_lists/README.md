@@ -1,0 +1,1 @@
+Singley linked lists. Why can't we just use arrays like normal people?
