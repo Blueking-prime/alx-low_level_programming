@@ -10,9 +10,8 @@
 
 unsigned int _strlen(const char *s)
 {
-char *p;
+const char *p = *s;
 unsigned int j = 0;
-p = s;
 
 while (*p != '\0')
 {
