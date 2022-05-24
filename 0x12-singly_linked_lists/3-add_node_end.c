@@ -57,9 +57,7 @@ list_t *last_node(list_t *head)
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
-	list_t *last_node_address;
-
-	last_node_address = last_node(*head);
+	list_t *last_node_address = last_node(*head);
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
