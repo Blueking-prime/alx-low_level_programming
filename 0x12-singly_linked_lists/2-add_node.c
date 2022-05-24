@@ -8,7 +8,7 @@
 * Return: (Always/Success)
 */
 
-unsigned int _strlen(char *s)
+unsigned int _strlen(const char *s)
 {
 char *p;
 unsigned int j = 0;
