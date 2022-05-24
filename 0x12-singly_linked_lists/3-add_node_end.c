@@ -69,13 +69,8 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new->str = strdup(str);
 	new->len = _strlen(str);
-	last_node_address = new;
+	last_node_address->next = new;
 	new->next = NULL;
-
-	if (new->next != NULL)
-	{
-		last_node_address++;
-	}
 
 	return (new);
 }
