@@ -58,7 +58,6 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
 	list_t *last_node_address;
-	int i = 0;
 
 	last_node_address = last_node(*head);
 
