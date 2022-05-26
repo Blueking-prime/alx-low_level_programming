@@ -25,8 +25,6 @@ int listint_length(const listint_t *h)
 *
 * @index: number in node
 *
-* @n: number to insert
-*
 * Return: (Always/Success)
 */
 
