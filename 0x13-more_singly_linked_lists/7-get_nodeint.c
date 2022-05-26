@@ -46,7 +46,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		return (head);
 	}
 
-	for(i = 0; i < k; i++)
+	for (i = 0; i < k; i++)
 	{
 		currrent_node = currrent_node->next;
 	}

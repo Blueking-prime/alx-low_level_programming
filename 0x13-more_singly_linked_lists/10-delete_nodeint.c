@@ -51,7 +51,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		return (1);
 	}
 
-	for(i = 0; i < k - 1; i++)
+	for (i = 0; i < k - 1; i++)
 	{
 		previous_node = previous_node->next;
 	}

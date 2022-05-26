@@ -52,7 +52,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (new);
 	}
 
-	for(i = 0; i < j - 1; i++)
+	for (i = 0; i < j - 1; i++)
 	{
 		currrent_last_node = currrent_last_node->next;
 	}
