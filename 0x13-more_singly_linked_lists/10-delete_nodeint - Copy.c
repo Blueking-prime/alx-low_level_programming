@@ -30,37 +30,32 @@ int listint_length(const listint_t *h)
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *current;
-	listint_t *previous;
+	int i, j, k;
+	listint_t *next_node;
+	listint_t *previous_node = *head;
 
-	if (head == NULL || (*head) == NULL)
-		return (-1);
+	k = (int) index;
 
-	current = *head;
-	if (index == 0)
+	j = listint_length(*head);
+
+	if (k > j - 1)
 	{
-		if ((*head)->next)
-			(*head) = (*head)->next;
-		else
-			(*head) = NULL;
-		free(current);
+		return (-1);
+	}
+
+	if (k == 0)
+	{
+		*head = previous_node->next;
 		return (1);
 	}
 
-	while (index != 1)
+	for (i = 0; i < k - 1; i++)
 	{
-		if (current->next == NULL)
-			return (-1);
-
-		current = current->next;
-		--index;
+		previous_node = previous_node->next;
 	}
-	previous = current->next;
-	if (current->next->next)
-		current->next = current->next->next;
-	else
-		current->next = NULL;
-	free(previous);
+
+	previous_node->next = next_node->next;
+	free(next_node);
 
 	return (1);
 }

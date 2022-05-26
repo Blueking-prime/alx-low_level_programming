@@ -32,39 +32,42 @@ int listint_length(const listint_t *h)
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
+	int i, j, k;
 	listint_t *new;
-	listint_t *current;
+	listint_t *previous_node = *head;
 
-	if (head == NULL)
-		return (0);
+	k = (int) idx;
+
+	j = listint_length(*head);
+
+	if (k > j - 1)
+	{
+		return (NULL);
+	}
+
 	new = malloc(sizeof(listint_t));
-	if (!new)
-		return (0);
+	if (new == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
 
-	new->next = NULL;
 	new->n = n;
 
-	if (idx == 0)
+	if (k == 0)
 	{
 		new->next = *head;
-		(*head) = new;
+		*head = new;
 		return (new);
 	}
 
-	current = *head;
-
-	while (idx != 1)
+	for (i = 0; i < k - 1; i++)
 	{
-		current = current->next;
-		--idx;
-		if (current == NULL)
-		{
-			free(new);
-			return (NULL);
-		}
+		previous_node = previous_node->next;
 	}
-	new->next = current->next;
-	current->next = new;
+
+	new->next = previous_node->next;
+	previous_node->next = new;
 
 	return (new);
 }
