@@ -1,24 +1,6 @@
 #include "lists.h"
 
 /**
-* listint_length - Calculates number of items in a list
-*
-* @h: List to be printed
-*
-* Return: (Always/Success)
-*/
-
-int listint_length(const listint_t *h)
-{
-	if (h == NULL)
-	{
-		return (0);
-	}
-
-	return (1 + listint_length(h->next));
-}
-
-/**
 * *insert_nodeint_at_index - Entry point
 *
 * @head: current head of list
