@@ -10,23 +10,23 @@
 
 int _atoi(const char *s)
 {
-	int i, sign = 1, resp = 0, firstNum;
+	int i, j, resp = 0;
 
-	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		if (s[firstNum] == '-')
+		if (s[j] < 48 || s[j] > 57)
 		{
-			sign *= -1;
+			return (0);
 		}
 	}
 
-	for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		resp *= 10;
-		resp += (s[i] - 48);
+		resp += (s[i] - '0');
 	}
 
-	return (sign * resp);
+	return (resp);
 }
 
 /**
