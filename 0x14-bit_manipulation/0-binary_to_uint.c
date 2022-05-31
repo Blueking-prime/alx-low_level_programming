@@ -8,9 +8,9 @@
 * Return: (Always/Success)
 */
 
-int _atoi(const char *s)
+unsigned int _atoi(const char *s)
 {
-	int i, j, resp = 0;
+	unsigned int i, j, resp = 0;
 
 	for (j = 0; s[j] != '\0'; j++)
 	{
@@ -39,7 +39,7 @@ int _atoi(const char *s)
 
 unsigned int binary_to_uint(const char *b)
 {
-	int a, c, d, e, i;
+	unsigned int a, c, d, e, i;
 
 	if (b == NULL)
 	{
