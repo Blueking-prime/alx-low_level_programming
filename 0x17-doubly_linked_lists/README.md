@@ -1,0 +1,1 @@
+So we're back to C huh? Hope this is just as simple as regular linked lists
