@@ -1,14 +1,6 @@
 #include "main.h"
 
 /**
-* _strlen - Calculates length of string
-*
-* @s: String to be checked
-*
-* Return: (Always/Success)
-*/
-
-/**
 * *_strstr - Calculates string stuff
 *
 * @haystack: String to be checked
@@ -17,21 +9,6 @@
 *
 * Return: (Always/Success)
 */
-
-int _strlen(char *s)
-{
-char *p;
-int j = 0;
-p = s;
-
-while (*p != '\0')
-{
-j++;
-p++;
-}
-
-return (j);
-}
 
 char *_strstr(char *haystack, char *needle)
 {
