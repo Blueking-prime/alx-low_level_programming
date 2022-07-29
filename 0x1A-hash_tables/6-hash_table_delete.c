@@ -38,7 +38,6 @@ void hash_table_delete(hash_table_t *ht)
 					free(node);
 					node = next;
 				}
-				free(ht->array[current_idx]);
 			}
 		}
 		current_idx++;
