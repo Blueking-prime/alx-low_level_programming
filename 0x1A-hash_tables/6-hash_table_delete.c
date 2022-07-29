@@ -23,12 +23,18 @@ void hash_table_delete(hash_table_t *ht)
 		{
 			node = ht->array[current_idx];
 			if (node->next == NULL)
+			{
+				free(node->key);
+				free(node->value);
 				free(node);
+			}
 			else
 			{
 				while (node != NULL)
 				{
 					next = node->next;
+					free(node->key);
+					free(node->value);
 					free(node);
 					node = next;
 				}
