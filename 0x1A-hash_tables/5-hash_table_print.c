@@ -21,29 +21,17 @@ void hash_table_print(const hash_table_t *ht)
 
 	while (current_idx < ht->size)
 	{
-		if (ht->array[current_idx] != NULL)
+		node = ht->array[current_idx];
+		while (node != NULL)
 		{
-			node = ht->array[current_idx];
-			if (node->next == NULL)
-			{
-				if (print_check > 0)
-					printf(", ");
-				printf("'%s': '%s'", node->key, node->value);
-				print_check++;
-			}
-			else
-			{
-				while (node != NULL)
-				{
-					if (print_check > 0)
-						printf(", ");
-					printf("'%s': '%s'", node->key, node->value);
-					print_check++;
-					node = node->next;
-				}
-			}
+			if (print_check > 0)
+				printf(", ");
+			printf("'%s': '%s'", node->key, node->value);
+			print_check++;
+			node = node->next;
 		}
 		current_idx++;
 	}
+	
 	printf("}\n");
 }
