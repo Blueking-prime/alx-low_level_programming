@@ -6,7 +6,7 @@ OBJ = $(SRC:%.c=%.o)
 
 NAME = school
 
-RM = rm
+RM = rm -f
 
 all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
@@ -15,10 +15,10 @@ all: ${OBJ}
 	${CC} -c $< -o $@
 
 clean:
-	${RM} -f *~ school
+	${RM} *~ school
 
 oclean:
-	${RM} -f ${OBJ}
+	${RM} ${OBJ}
 
 fclean: clean oclean
 
