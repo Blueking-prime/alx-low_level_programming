@@ -14,12 +14,12 @@ all: ${OBJ}
 %.o: %.c
 	${CC} -c $< -o $@
 
-fclean: clean oclean
-
 clean:
 	${RM} -f *~ school
 
 oclean:
 	${RM} -f ${OBJ}
+
+fclean: clean oclean
 
 re: oclean all
