@@ -26,6 +26,10 @@ def island_perimeter(grid):
                 except IndexError:
                     w = 0
                 perimeter += check_surroundings(n, e, s, w)
+            elif grid[i][j] == 0:
+                continue
+            else:
+                return 0
     return perimeter
 
 def check_surroundings(n, e, s, w):
