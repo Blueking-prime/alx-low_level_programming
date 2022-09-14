@@ -19,7 +19,7 @@ all: ${OBJ}
 fclean: clean oclean
 
 clean:
-	${RM} -f *~ school
+	${RM} -f *~ ${NAME}
 
 oclean:
 	${RM} -f ${OBJ}
