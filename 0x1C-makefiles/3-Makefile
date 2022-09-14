@@ -15,7 +15,7 @@ all: ${OBJ}
 	${CC} -c $< -o $@
 
 clean:
-	${RM} *~ school
+	${RM} *~ ${NAME}
 
 oclean:
 	${RM} ${OBJ}
