@@ -9,21 +9,21 @@ def island_perimeter(grid):
     for i in range(len(grid)):
         for j in range(len(grid[i])):
             if grid[i][j] == 1:
-                try:
+                if i != 0:
                     n = grid[i - 1][j]
-                except IndexError:
+                else:
                     n = 0
-                try:
+                if j != len(grid[i]) - 1:
                     e = grid[i][j + 1]
-                except IndexError:
+                else:
                     e = 0
-                try:
+                if i != len(grid) - 1:
                     s = grid[i + 1][j]
-                except IndexError:
+                else:
                     s = 0
-                try:
+                if j != 0:
                     w = grid[i][j - 1]
-                except IndexError:
+                else:
                     w = 0
                 perimeter += check_surroundings(n, e, s, w)
     return perimeter
